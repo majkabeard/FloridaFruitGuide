@@ -1,0 +1,216 @@
+/* Colors */
+/* rgba(237,165,128); orange color */
+/* rgba(240,158,169); pink color */
+/* rgb(81, 189, 151); lighter green */
+/* rgb(29, 110, 94) dark green */
+/* #8CC59C; */
+/* #C6DDA8; */
+/* #A6CD9C; */
+/* fruit-background_background.png */
+
+@font-face {
+    font-family: "billy_ohio";
+    src: url("font/webfontkit-20200810-162443/billy_ohio-demo.html");
+    src:
+    url("font/webfontkit-20200810-162443/billy_ohio-webfont.woff") format("woff"),
+    url("font/webfontkit-20200810-162443/billy_ohio-webfont.woff2") format("woff"),
+    url("css/fonts/Harabara.svg#filename") format("svg");
+    }
+
+
+
+body {
+    margin: 0;
+    padding: 0px;
+    /* clear: both; */
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    /*put this to keep text from hidding*/
+    
+    background-image: linear-gradient(-30deg, rgba(81, 189, 151, .9), rgba(81, 189, 151, .2)) ;
+    /* url(5.png) */
+
+    background-repeat: repeat, no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: none, overlay;
+    min-height: 100vh;
+}
+
+p {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* CSS for header, use for other pages */
+
+header {
+    height: 5vh;
+    background-color: rgb(29, 110, 94);
+    width: 100%;
+    padding: 0px 20px;
+    border-bottom: 5px solid rgba(237, 165, 128);
+    display: flex;
+    align-items: center;
+}
+
+
+.small-logo {
+    fill: white;
+    height: 40px;
+    display: inline-block;  
+}
+#leafs {
+    fill: #8CC59C; 
+    /* fill: #C6DDA8; 
+    fill: #A6CD9C; */
+}
+
+.letsthiswork {
+    fill: white;
+}
+
+.testing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+
+.ffg-header-left {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    width: 40%;
+}
+
+.ffg-header-right {
+    width: 40%;
+}
+
+.ffg-header-right-nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.ffg-nav-list {
+    padding-left: 45px;
+}
+
+/* change color when you hover over the nav */
+
+.ffg-nav-list:hover {
+    color: rgb(240, 158, 169);
+    /* border-bottom: 1px solid #CBEEFA;
+    box-shadow: 0px -4px 0px #CBEEFA inset; */
+}
+
+/* end of CSS for header */
+
+
+
+footer {
+    height: 4vh;
+    background-color: rgb(29, 110, 94);
+    width: 100%;
+    border-top: 5px solid rgba(237, 165, 128);
+    position: fixed;
+    bottom: 0;
+    color: rgba(255, 255, 255, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Main section! */
+
+
+h1 {
+    color: rgba(29, 110, 94);
+    font-size: 45px;
+    line-height: 1.5;
+    margin: 0;
+    font-weight: bolder;
+    font-weight: 600;
+}
+
+h3 {
+    color: rgba(29, 110, 94);
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+    font-weight: 300;
+    font-style: italic;
+}
+
+h5 {
+    color: rgba(29, 110, 94);
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+/* .ffg-fruit-list*/
+ h6 {
+    list-style: none;
+    color: rgb(49, 91, 105);
+    font-size: 20px;
+    line-height: 2;
+    margin-top: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.f-links {
+    color: rgb(49, 91, 105);
+    text-decoration: none;
+}
+
+.f-links:hover {
+    color: rgba(240,158,169);
+}
+
+
+
+.main {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.split {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+    padding-bottom: 100px;
+}
+
+@media (min-width: 768px) {
+    .split {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+    }
+}
+
+.title {
+    margin: auto;
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: "billy_ohio";
+    font-size: 98px;
+        letter-spacing: 10px;
+        transform: rotate(-10deg);
+}

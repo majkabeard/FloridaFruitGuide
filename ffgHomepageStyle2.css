@@ -1,0 +1,289 @@
+/* Colors */
+/* rgba(237,165,128); orange color */
+/* rgba(240,158,169); pink color */
+/* rgb(81, 189, 151); lighter green */
+/* rgb(29, 110, 94) dark green */
+/* #8CC59C; */
+/* #C6DDA8; */
+/* #A6CD9C; */
+/* fruit-background_background.png */
+
+
+
+body {
+    margin: 0;
+    padding: 0px;
+    /* clear: both; */
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    /*put this to keep text from hidding*/
+    
+    background-image: linear-gradient(-30deg, rgba(81, 189, 151, .9), rgba(81, 189, 151, .2)) ;
+    /* url(5.png) */
+
+    background-repeat: repeat, no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: none, overlay;
+    min-height: 100vh;
+}
+
+p {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* CSS for header, use for other pages */
+
+header {
+    height: 5vh;
+    background-color: rgb(29, 110, 94);
+    width: 100%;
+    padding: 0px 20px;
+    border-bottom: 5px solid rgba(237, 165, 128);
+    display: flex;
+    align-items: center;
+}
+
+
+.small-logo {
+    fill: white;
+    height: 40px;
+    display: inline-block;  
+}
+
+.letsthiswork {
+    fill: white;
+}
+
+.testing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+
+.ffg-header-left {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    width: 40%;
+}
+
+.ffg-header-right {
+    width: 40%;
+}
+
+.ffg-header-right-nav {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 15px;
+  
+}
+
+.ffg-nav-list {
+    padding-left: 45px;
+}
+
+/* change color when you hover over the nav */
+
+.ffg-nav-list:hover {
+    color: rgb(240, 158, 169);
+}
+
+/* end of CSS for header */
+
+
+
+footer {
+    height: 4vh;
+    background-color: rgb(29, 110, 94);
+    width: 100%;
+    border-top: 5px solid rgba(237, 165, 128);
+    position: fixed;
+    bottom: 0;
+    color: rgba(255, 255, 255, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Main section! */
+
+.logo-center {
+    height: 100px;
+    fill:  rgba(29, 110, 94, .9);
+    margin-top: 50px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+.centercenter {
+width: 90%;
+}
+
+@media (min-width: 768px) {
+    .centercenter {
+        width: 60%;
+        }}
+
+
+#leafs {
+    fill: #8CC59C; 
+    /* fill: #C6DDA8; 
+    fill: #A6CD9C; */
+}
+
+
+.make-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .make-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .ffg-main-right {
+        padding-top: 40px;
+    }
+}
+
+/* making the column smaller so text doesn't run across the screen too far when on a large screen */
+
+@media (min-width: 1200px) {
+    .ffg-initial-right-info {
+        width: 80%;
+    }
+}
+
+.actual-florida-map {
+    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.3));
+    /* added a dropshadow to the map */
+    margin-bottom: -50px;
+}
+/* hover states for the F map */
+#south:hover {
+    fill: rgb(237, 165, 128);
+    transition: .2s ease-in;
+}
+
+#central:hover {
+    fill: rgb(237, 165, 128);
+    transition: .2s ease-in;
+}
+
+#north:hover {
+    fill: rgb(237, 165, 128);
+    transition: .2s ease-in;
+}
+
+
+
+.ffg-main-right {
+    margin: 20px auto 0px;
+    width: 90%;
+    /* padding-bottom: 60px; */
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .ffg-main-right {
+        text-align: left;
+
+    }
+    .listed-fruit {
+        text-align: left;
+        padding-left: 25px;
+    }
+}
+
+h1 {
+    color: rgba(29, 110, 94);
+    font-size: 45px;
+    line-height: 1.5;
+    margin: 0;
+    font-weight: bolder;
+    font-weight: 600;
+}
+
+h3 {
+    color: rgba(29, 110, 94);
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+    font-weight: 300;
+    font-style: italic;
+}
+
+h5 {
+    color: rgba(29, 110, 94);
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+/* .ffg-fruit-list*/
+ h6 {
+    list-style: none;
+    color: rgb(49, 91, 105);
+    font-size: 20px;
+    line-height: 2;
+    margin-top: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.f-links {
+    color: rgb(49, 91, 105);
+    text-decoration: none;
+}
+
+.f-links:hover {
+    color: rgba(240,158,169);
+}
+
+
+.ffg-initial-right-info {
+    padding-right: 20px;
+}
+
+.specific-regions {
+    text-align: center;
+}
+
+
+.button2 {
+    border: 3px solid rgb(29, 110, 94);
+    border-radius: 5px;
+    padding: 15px;
+    margin: 30px auto 90px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: .2s ease-in;
+    width: 200px;
+    height: 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+}
+
+.button2:hover {
+    background-color: rgb(240, 158, 169);
+    border: none;
+}

@@ -1,0 +1,47 @@
+
+
+const channels = document.querySelectorAll('.channel')
+const screen = document.querySelector('#screen img')
+const imagesFromDB = [
+"https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-conditionals-images/blue-planet.jpg",
+"https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-conditionals-images/deadpool.jpg",
+"https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-conditionals-images/gravity.jpg",
+"https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-conditionals-images/good-will-hunting.jpg",
+"https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-conditionals-images/cnn.jpg",
+"https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-conditionals-images/koyaanisqatsi.jpg",
+"https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-conditionals-images/parts-unknown.jpg",
+"https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-conditionals-images/star-wars-solo.jpeg", 
+"https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-conditionals-images/stranger-things.jpg"]
+Use a loop to look through my array
+for(let i = 0; i < channels.length; i++) {
+  // apply the event listeners to the channels
+  channels[i].addEventListener('click', function(event) {
+    if(event.target.innerText === '1') {
+      screen.setAttribute('src', imagesFromDB[0]); 
+    } 
+    else if(event.target.innerText === '2') {
+      screen.setAttribute('src', imagesFromDB[1]); 
+    } 
+    else if(event.target.innerText === '3') {
+      screen.setAttribute('src', imagesFromDB[2]); 
+    } 
+    else if(event.target.innerText === '4') {
+      screen.setAttribute('src', imagesFromDB[3]);
+    } 
+    else if(event.target.innerText === '5') {
+      screen.setAttribute('src', imagesFromDB[4]); 
+    } 
+    else if(event.target.innerText === '6') {
+      screen.setAttribute('src', imagesFromDB[5]); 
+    } 
+    else if(event.target.innerText === '7') {
+      screen.setAttribute('src', imagesFromDB[6]); 
+    } 
+    else if(event.target.innerText === '8') {
+      screen.setAttribute('src', imagesFromDB[7]); 
+    } 
+    else if(event.target.innerText === '9') {
+      screen.setAttribute('src', imagesFromDB[8]); 
+    }  
+  })
+}
