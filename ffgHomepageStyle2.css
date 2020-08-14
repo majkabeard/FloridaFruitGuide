@@ -6,7 +6,9 @@
 /* #8CC59C; */
 /* #C6DDA8; */
 /* #A6CD9C; */
-/* fruit-background_background.png */
+/* color: rgb(143, 50, 13); maroon color */
+
+/* original header color: rgb(29, 110, 94); */
 
 
 
@@ -17,9 +19,9 @@ body {
     font-size: 12px;
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
-    /*put this to keep text from hidding*/
+    /*put this to keep text from hiding*/
     
-    background-image: linear-gradient(-30deg, rgba(81, 189, 151, .9), rgba(81, 189, 151, .2)) ;
+    background-image: linear-gradient(-45deg, rgba(81, 189, 151, .9), rgba(81, 189, 151, .4)), url(images/newmockup3.png);
     /* url(5.png) */
 
     background-repeat: repeat, no-repeat;
@@ -35,30 +37,31 @@ p {
 
 a {
     text-decoration: none;
-    color: white;
+    color: rgb(255,239,206);
 }
 
 /* CSS for header, use for other pages */
 
 header {
     height: 5vh;
-    background-color: rgb(29, 110, 94);
+    background-color: rgb(240,164,142);
     width: 100%;
     padding: 0px 20px;
-    border-bottom: 5px solid rgba(237, 165, 128);
+    border-bottom: 2px solid rgb(255,239,206);
     display: flex;
     align-items: center;
 }
 
 
 .small-logo {
-    fill: white;
     height: 40px;
-    display: inline-block;  
+    display: inline-block;
 }
 
+/* how to color small version of logo */
 .letsthiswork {
     fill: white;
+    display: inline-block;
 }
 
 .testing {
@@ -92,13 +95,14 @@ header {
 }
 
 .ffg-nav-list {
-    padding-left: 45px;
+    padding-left: 65px;
+color: rgb(255,239,206)
 }
 
 /* change color when you hover over the nav */
 
 .ffg-nav-list:hover {
-    color: rgb(240, 158, 169);
+    color: rgb(230,61,65);
 }
 
 /* end of CSS for header */
@@ -107,9 +111,9 @@ header {
 
 footer {
     height: 4vh;
-    background-color: rgb(29, 110, 94);
+    background-color: rgb(240,164,142);
     width: 100%;
-    border-top: 5px solid rgba(237, 165, 128);
+    border-top: 2px solid rgba(255,239,206);
     position: fixed;
     bottom: 0;
     color: rgba(255, 255, 255, .5);
@@ -119,17 +123,18 @@ footer {
 }
 
 
-
 /* Main section! */
 
 .logo-center {
     height: 100px;
-    fill:  rgba(29, 110, 94, .9);
-    margin-top: 50px;
+    fill: rgba(0,145,119); 
+    margin-top: 70px;
     display: flex; 
     align-items: center; 
     justify-content: center;
 }
+/* rgba(29, 110, 94, .9);(255,255,255,.7)    143, 50, 13*/
+
 .centercenter {
 width: 90%;
 }
@@ -141,7 +146,7 @@ width: 90%;
 
 
 #leafs {
-    fill: #8CC59C; 
+    fill: rgb(1, 187, 122); 
     /* fill: #C6DDA8; 
     fill: #A6CD9C; */
 }
@@ -197,6 +202,7 @@ width: 90%;
     width: 90%;
     /* padding-bottom: 60px; */
     text-align: center;
+    padding-bottom: 100px;
 }
 
 @media (min-width: 768px) {
@@ -211,16 +217,17 @@ width: 90%;
 }
 
 h1 {
-    color: rgba(29, 110, 94);
+    color: rgb(0,145,119); 
     font-size: 45px;
     line-height: 1.5;
     margin: 0;
     font-weight: bolder;
     font-weight: 600;
 }
+/* rgba(29, 110, 94) */
 
 h3 {
-    color: rgba(29, 110, 94);
+    color: rgba(30,90,103);
     font-size: 20px;
     line-height: 1.5;
     margin: 0;
@@ -229,7 +236,7 @@ h3 {
 }
 
 h5 {
-    color: rgba(29, 110, 94);
+    color: rgb(30,90,103);
     font-size: 15px;
     line-height: 1.5;
     font-weight: 400;
@@ -238,7 +245,7 @@ h5 {
 /* .ffg-fruit-list*/
  h6 {
     list-style: none;
-    color: rgb(49, 91, 105);
+    color: rgb(30,90,103);
     font-size: 20px;
     line-height: 2;
     margin-top: 10px;
@@ -284,6 +291,6 @@ h5 {
 }
 
 .button2:hover {
-    background-color: rgb(240, 158, 169);
+    background-color: rgb(237, 165, 128);
     border: none;
 }
