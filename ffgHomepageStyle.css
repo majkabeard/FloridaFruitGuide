@@ -46,7 +46,7 @@ header {
     height: 5vh;
     background-color: rgb(240,164,142);
     width: 100%;
-    padding: 0px 20px;
+    /* padding: 0px 20px; */
     border-bottom: 2px solid rgb(255,239,206);
     display: flex;
     align-items: center;
@@ -66,9 +66,9 @@ header {
 
 .testing {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 95%;
+    width: 100%;
 }
 
 .ffg-header-left {
@@ -77,12 +77,24 @@ header {
     display: flex;
     align-items: center;
     padding-left: 20px;
-    width: 40%;
+    width: 45%;
 }
+@media (min-width: 768px) {
+    .ffg-header-left {
+        padding-left: 0px;
+        }}
+
 
 .ffg-header-right {
-    width: 40%;
+    width: 45%;
+    padding-right: 20px;
 }
+
+@media (min-width: 768px) {
+    .ffg-header-right {
+        padding-right: 0px;
+        }
+    }
 
 .ffg-header-right-nav {
     display: flex;
@@ -91,13 +103,18 @@ header {
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 15px;
-  
 }
 
 .ffg-nav-list {
-    padding-left: 65px;
+    padding-left: 35px;
 color: rgb(255,239,206)
 }
+
+@media (min-width: 768px) {
+    .ffg-nav-list {
+        padding-left: 65px;
+        }
+    }
 
 /* change color when you hover over the nav */
 
@@ -110,7 +127,7 @@ color: rgb(255,239,206)
 
 
 footer {
-    height: 4vh;
+    height: 6vh;
     background-color: rgb(240,164,142);
     width: 100%;
     border-top: 2px solid rgba(255,239,206);
@@ -121,6 +138,11 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
+@media (min-width: 768px) {
+    footer {
+        height: 4vh;
+        }}
 
 
 /* Main section! */

@@ -39,13 +39,19 @@ a {
     color: white;
 }
 
+#leafs {
+    fill: rgb(1, 187, 122); 
+    /* fill: #C6DDA8; 
+    fill: #A6CD9C; */
+}
+
 /* CSS for header, use for other pages */
 
 header {
     height: 5vh;
     background-color: rgb(240,164,142);
     width: 100%;
-    padding: 0px 20px;
+    /* padding: 0px 20px; */
     border-bottom: 2px solid rgb(255,239,206);
     display: flex;
     align-items: center;
@@ -56,6 +62,8 @@ header {
     z-index: 10;
 }
 
+/* CSS for header, use for other pages */
+
 
 .small-logo {
     height: 40px;
@@ -65,19 +73,14 @@ header {
 /* how to color small version of logo */
 .letsthiswork {
     fill: white;
-    display: inline-block;}
-
-    #leafs {
-        fill: rgb(1, 187, 122); 
-        /* fill: #C6DDA8; 
-        fill: #A6CD9C; */
-    }
+    display: inline-block;
+}
 
 .testing {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 95%;
+    width: 100%;
 }
 
 .ffg-header-left {
@@ -86,12 +89,24 @@ header {
     display: flex;
     align-items: center;
     padding-left: 20px;
-    width: 40%;
+    width: 45%;
 }
+@media (min-width: 768px) {
+    .ffg-header-left {
+        padding-left: 0px;
+        }}
+
 
 .ffg-header-right {
-    width: 40%;
+    width: 45%;
+    padding-right: 20px;
 }
+
+@media (min-width: 768px) {
+    .ffg-header-right {
+        padding-right: 0px;
+        }
+    }
 
 .ffg-header-right-nav {
     display: flex;
@@ -100,18 +115,23 @@ header {
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 15px;
-  
 }
 
 .ffg-nav-list {
-    padding-left: 45px;
+    padding-left: 35px;
+color: rgb(255,239,206)
 }
+
+@media (min-width: 768px) {
+    .ffg-nav-list {
+        padding-left: 65px;
+        }
+    }
 
 /* change color when you hover over the nav */
 
 .ffg-nav-list:hover {
     color: rgb(230,61,65);
-
 }
 
 /* end of CSS for header */
@@ -174,7 +194,7 @@ hr {
     /* color: rgba(81, 189, 151, .9); */
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
     .center-box {
         grid-template-columns: 1fr 1fr;
         /* border-bottom: hidden; */
