@@ -2,7 +2,7 @@
 // 
 document.querySelectorAll('.regions').forEach((item, index) => {
   item.addEventListener('click', event => {
-    document.querySelector('.ffg-main-right').innerHTML = "<h1>" + dataArray[index][0] + "</h1>" + "<h3>" + dataArray[index][1] + "</h3>" + "<h6 class='listed-fruit'>" + dataArray[index][2] + "</h6>" + "<a href='ffgHome2.html' class='button2'>" + dataArray[index][3] + "</a>"
+    document.querySelector('.ffg-main-right').innerHTML = "<h1>" + dataArray[index][0] + "</h1>" + "<h3>" + dataArray[index][1] + "</h3>" + "<h6 class='listed-fruit'>" + dataArray[index][2] + "</h6>" + "<a href='index.html' class='button2'>" + dataArray[index][3] + "</a>"
   })
 })
 
