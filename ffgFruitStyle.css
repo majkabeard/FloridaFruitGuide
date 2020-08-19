@@ -19,14 +19,12 @@ body {
     font-size: 12px;
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
-    /*put this to keep text from hidding*/
+    /*put this to keep text from hiding*/
     
     background-image: linear-gradient(-45deg, rgba(81, 189, 151, .9), rgba(81, 189, 151, .4)), url(images/newmockup4.png);
     background-repeat: repeat, repeat;
     background-position: center, left;
     background-size: cover, none;
-    /* background-blend-mode: none, overlay; */
-    /* min-height: 100vh; */
     width: 100%;
 }
 
@@ -48,19 +46,23 @@ a {
 /* CSS for header, use for other pages */
 
 header {
-    height: 5vh;
+    height: 7vh;
     background-color: rgb(240,164,142);
     width: 100%;
     /* padding: 0px 20px; */
     border-bottom: 2px solid rgb(255,239,206);
     display: flex;
     align-items: center;
-
-    position: fixed; /* made the header stick cause the scrollis long on this page, user can go to other page easier*/
+    position: fixed; /* made the header stick cause the scroll is long on this page, user can go to other page easier*/
     top: 0;
     margin-bottom: 100px;
     z-index: 10;
 }
+
+@media (min-width: 768px) {
+    header {
+        height: 5vh;
+        }}
 
 /* CSS for header, use for other pages */
 
@@ -140,7 +142,7 @@ color: rgb(255,239,206)
 
 /* FOOTER */
 footer {
-    height: 4vh;
+    height: 7vh;
     background-color: rgb(240,164,142);
     width: 100%;
     border-top: 2px solid rgba(255,239,206);
@@ -151,6 +153,12 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
+
+@media (min-width: 768px) {
+    footer {
+        height: 4vh;
+        }}
 
 .footer-text {
     color: rgba(255, 255, 255, .5);
@@ -194,7 +202,7 @@ hr {
     /* color: rgba(81, 189, 151, .9); */
 }
 
-@media (min-width: 768px) {
+@media (min-width: 940px) {
     .center-box {
         grid-template-columns: 1fr 1fr;
         /* border-bottom: hidden; */

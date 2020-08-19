@@ -43,7 +43,7 @@ a {
 /* CSS for header, use for other pages */
 
 header {
-    height: 5vh;
+    height: 7vh;
     background-color: rgb(240,164,142);
     width: 100%;
     /* padding: 0px 20px; */
@@ -51,6 +51,11 @@ header {
     display: flex;
     align-items: center;
 }
+
+@media (min-width: 768px) {
+    header {
+        height: 5vh;
+        }}
 
 
 .small-logo {

@@ -56,7 +56,7 @@ a {
 /* CSS for header, use for other pages */
 
 header {
-    height: 5vh;
+    height: 7vh;
     background-color: rgb(240,164,142);
     width: 100%;
     /* padding: 0px 20px; */
@@ -64,6 +64,11 @@ header {
     display: flex;
     align-items: center;
 }
+
+@media (min-width: 768px) {
+    header {
+        height: 5vh;
+        }}
 
 
 .small-logo {
@@ -138,19 +143,25 @@ color: rgb(255,239,206)
 /* end of CSS for header */
 
 
-
+/* FOOTER */
 footer {
-    height: 4vh;
+    height: 6vh;
     background-color: rgb(240,164,142);
     width: 100%;
     border-top: 2px solid rgba(255,239,206);
-    position: fixed;
+    position: relative;
     bottom: 0;
     color: rgba(255, 255, 255, .5);
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+@media (min-width: 768px) {
+    footer {
+        height: 4vh;
+        }}
+/* END FOOTER */
 
 
 
